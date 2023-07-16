@@ -1,0 +1,228 @@
+Script started on Sun Jul 16 15:11:23 2023
+]0;~/projects/personal/svelte-book-kit-tutorial
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial[39m
+[35m❯[39m [K[?2004h[1m[31mt[0m[39m[1m[31mt[0m[39m[90mouch .env[39m[9D[1m[31mt[1m[31mo[0m[39m[1m[31mt[1m[31mo[1m[31mu[0m[39m[1m[31mu[1m[31mc[0m[39m[0m[32mt[0m[32mo[0m[32mu[0m[32mc[32mh[39m[39m [39m [39m [39m [39m [90m .env[39m[1m[31mt[1m[31mo[1m[31mu[1m[31mc[0m[39m[39m [39m [39m [39m [39m [39m [90mh .env[39m[1m[31mu[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [90mch .env[39m[1m[31mt[1m[31mo[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [8D[90much .env[39m[8D[1m[31mt[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[1m[31mt[0m[39m[90mouch .env[39m[9D[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[1m[31mc[0m[39m[1m[31mc[0m[39m[90mode .env[39m[8D[0m[32mc[32md[39m[39m [39m [39m [39m [39m [39m [39m [90m svelte-book-kit-tutorial[39m[25D[39m [39m[4ms[24m[4ms[39m[4mc[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [22D[90mroll-control[39m[12D[4mc[39m[4mr[24m[4mr[39m[4mi[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[4mi[4mp[24m[4mp[4mt[24m[?2004l
+]0;svelte-book-kit-tutorial: cd scripttotal 0
+]0;~/projects/personal/svelte-book-kit-tutorial/script
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial/script[39m
+[35m❯[39m [K[?2004h[1m[31mt[0m[39m[1m[31mt[0m[39m[90mouch .env[39m[9D[1m[31mt[1m[31mo[0m[39m[1m[31mt[1m[31mo[1m[31mu[0m[39m[1m[31mu[1m[31mc[0m[39m[0m[32mt[0m[32mo[0m[32mu[0m[32mc[32mh[39m[39m [39ms[39m [39m [39m [90mrc/Action.svelte[39m[16D[39me[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[90mrvice/list_task.go[39m[18D[39me[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17Dd.js[?2004l
+]0;script: touch seed.js]0;~/projects/personal/svelte-book-kit-tutorial/script
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial/script[39m
+[35m❯[39m [K[?2004h[1m[31mc[0m[39m[1m[31mc[0m[39m[90md script[39m[8D[1m[31mc[1m[31mo[0m[39m[39m [39m [39m [39m [39m [39m [39m [90mde .env[39m[1m[31mc[1m[31mo[1m[31md[0m[39m[39m [39m [39m [39m [39m [39m [90me .env[39m[1m[31md[1m[31md[0m[39m[39m [39m [39m [39m [39m [1m[31md[0m[39m[0m[39m [90me .env[39m[0m[32mc[0m[32mo[0m[32md[32me[39m[39m [39m[4ms[24m[39m [39m [39m [90mrc/SvelteLogo.svelte[39m[20D[4ms[39m[4me[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[90mrvice/list_task.go[39m[18D[4me[39m[4me[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[34m[39m[24ms[24me[24med.js[1m [0m[8D[4ms[4me[4me[4md[4m.[4mj[4ms[24m[0m [?2004l
+]0;script: code seed.js]0;~/projects/personal/svelte-book-kit-tutorial/script
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial/script[39m
+[35m❯[39m [K[?2004h[1m[31mn[0m[39m[1m[31mn[0m[39m[90mpm i -D dotenv[39m[14D[1m[31mn[1m[31mo[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[90mde[39m[1m[31mn[1m[31mo[1m[31md[0m[39m[0m[32mn[0m[32mo[0m[32md[32me[39m [90mbuild[39m[39m[4ms[24m[39m [39m [39m [39m [90mcripts/setupTypeScript.js[39m[25D[4ms[39m[4me[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [24D[34m[39m[24ms[24meed.js[1m [0m[8D[4ms[4me[4me[4md[4m.[4mj[4ms[24m[0m [?2004l
+]0;script: node seed.js/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/mongodb-connection-string-url/lib/index.js:9
+    return (connectionString.startsWith('mongodb://') ||
+                             ^
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at connectionStringHasValidScheme (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb-connection-string-url[24m/lib/index.js:9:30)
+    at new ConnectionString (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb-connection-string-url[24m/lib/index.js:85:34)
+    at parseOptions (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb[24m/lib/connection_string.js:191:17)
+    at new MongoClient (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb[24m/lib/mongo_client.js:48:63)
+    at main [90m(file:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:13:18[90m)[39m
+    at [90mfile:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:38:1
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+
+Node.js v18.14.1
+]0;~/projects/personal/svelte-book-kit-tutorial/script
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial/script[39m
+[31m❯[39m [K[?2004h[32mnode[39m [4mseed.js[24m[?2004l
+]0;script: node seed.js/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/mongodb-connection-string-url/lib/index.js:86
+            throw new MongoParseError('Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"');
+                  ^
+
+MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+    at new ConnectionString (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb-connection-string-url[24m/lib/index.js:86:19)
+    at parseOptions (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb[24m/lib/connection_string.js:191:17)
+    at new MongoClient (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb[24m/lib/mongo_client.js:48:63)
+    at main [90m(file:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:13:18[90m)[39m
+    at [90mfile:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:38:1
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+
+Node.js v18.14.1
+]0;~/projects/personal/svelte-book-kit-tutorial/script
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial/script[39m
+[31m❯[39m [K[?2004h[32mnode[39m [4mseed.js[24m[?2004l
+]0;script: node seed.js/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/mongodb-connection-string-url/lib/index.js:86
+            throw new MongoParseError('Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"');
+                  ^
+
+MongoParseError: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+    at new ConnectionString (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb-connection-string-url[24m/lib/index.js:86:19)
+    at parseOptions (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb[24m/lib/connection_string.js:191:17)
+    at new MongoClient (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb[24m/lib/mongo_client.js:48:63)
+    at main [90m(file:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:13:18[90m)[39m
+    at [90mfile:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:38:1
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+
+Node.js v18.14.1
+]0;~/projects/personal/svelte-book-kit-tutorial/script
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial/script[39m
+[31m❯[39m [K[?2004h[32mnode[39m [4mseed.js[24m[?2004l
+]0;script: node seed.js[90mundefined[39m
+/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/mongodb-connection-string-url/lib/index.js:9
+    return (connectionString.startsWith('mongodb://') ||
+                             ^
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at connectionStringHasValidScheme (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb-connection-string-url[24m/lib/index.js:9:30)
+    at new ConnectionString (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb-connection-string-url[24m/lib/index.js:85:34)
+    at parseOptions (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb[24m/lib/connection_string.js:191:17)
+    at new MongoClient (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb[24m/lib/mongo_client.js:48:63)
+    at main [90m(file:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:15:18[90m)[39m
+    at [90mfile:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:40:1
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+
+Node.js v18.14.1
+]0;~/projects/personal/svelte-book-kit-tutorial/script
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial/script[39m
+[31m❯[39m [K[?2004h[32mnode[39m [4mseed.js[24m[?2004l
+]0;script: node seed.js[90mundefined[39m
+/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/mongodb-connection-string-url/lib/index.js:9
+    return (connectionString.startsWith('mongodb://') ||
+                             ^
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at connectionStringHasValidScheme (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb-connection-string-url[24m/lib/index.js:9:30)
+    at new ConnectionString (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb-connection-string-url[24m/lib/index.js:85:34)
+    at parseOptions (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb[24m/lib/connection_string.js:191:17)
+    at new MongoClient (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb[24m/lib/mongo_client.js:48:63)
+    at main [90m(file:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:15:18[90m)[39m
+
+Node.js v18.14.1
+]0;~/projects/personal/svelte-book-kit-tutorial/script
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial/script[39m
+[31m❯[39m [K[?2004h[32mnode[39m [4mseed.js[24m[?2004l
+]0;script: node seed.js{
+  error: Error: ENOENT: no such file or directory, open '/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/.env'
+  [90m    at Object.openSync (node:fs:600:3)[39m
+  [90m    at Object.readFileSync (node:fs:468:35)[39m
+      at Object.configDotenv (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mdotenv[24m/lib/main.js:198:42)
+      at Module.config (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mdotenv[24m/lib/main.js:223:25)
+      at [90mfile:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:5:20
+  [90m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m {
+    errno: [33m-2[39m,
+    syscall: [32m'open'[39m,
+    code: [32m'ENOENT'[39m,
+    path: [32m'/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/.env'[39m
+  }
+}
+[90mundefined[39m
+[90mundefined[39m
+/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/mongodb-connection-string-url/lib/index.js:9
+    return (connectionString.startsWith('mongodb://') ||
+                             ^
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at connectionStringHasValidScheme (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb-connection-string-url[24m/lib/index.js:9:30)
+    at new ConnectionString (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb-connection-string-url[24m/lib/index.js:85:34)
+    at parseOptions (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb[24m/lib/connection_string.js:191:17)
+    at new MongoClient (/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/[4mmongodb[24m/lib/mongo_client.js:48:63)
+    at main [90m(file:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:16:18[90m)[39m
+    at [90mfile:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:41:1
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+
+Node.js v18.14.1
+]0;~/projects/personal/svelte-book-kit-tutorial/script
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial/script[39m
+[31m❯[39m [K[?2004h[32mnode[39m [4mseed.js[24m[?2004l
+]0;script: node seed.jsfile:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/seed.js:5
+console.log(dotenv.config({ path: path.join(__dirname, "../.env") }));
+                                  ^
+
+ReferenceError: path is not defined
+    at [90mfile:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/[39mseed.js:5:35
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+
+Node.js v18.14.1
+]0;~/projects/personal/svelte-book-kit-tutorial/script
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial/script[39m
+[31m❯[39m [K[?2004h[1m[31mc[0m[39m[1m[31mc[0m[39m[90mode seed.js[39m[11D[0m[32mc[32md[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[90m script[39m[39m [39m[4m.[24m[39m [39m [39m [39m [39m [90m.[39m[4m.[39m[4m.[24m[?2004l
+]0;script: cd ..total 192
+-rw-r--r--    1 morishitanaoto  staff    944  7 14 16:15 README.md
+-rw-r--r--    1 morishitanaoto  staff    584  7 14 16:15 jsconfig.json
+-rw-r--r--    1 morishitanaoto  staff    468  7 14 16:15 svelte.config.js
+-rw-r--r--    1 morishitanaoto  staff    144  7 14 16:15 vite.config.js
+drwxr-xr-x    6 morishitanaoto  staff    192  7 16 11:18 [34msrc[39;49m[0m
+drwxr-xr-x    3 morishitanaoto  staff     96  7 16 11:23 [34mstatic[39;49m[0m
+drwxr-xr-x    4 morishitanaoto  staff    128  7 16 12:29 [34mdata[39;49m[0m
+drwxr-xr-x  117 morishitanaoto  staff   3744  7 16 15:11 [34mnode_modules[39;49m[0m
+-rw-r--r--    1 morishitanaoto  staff  59637  7 16 15:11 package-lock.json
+-rw-r--r--    1 morishitanaoto  staff    607  7 16 15:11 package.json
+drwxr-xr-x    3 morishitanaoto  staff     96  7 16 15:11 [34mscript[39;49m[0m
+-rw-r--r--    1 morishitanaoto  staff  13813  7 16 15:24 typescript
+]0;~/projects/personal/svelte-book-kit-tutorial
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial[39m
+[35m❯[39m [K[?2004h[4mn[24m[4mn[24m[90mode seed.js[39m[11D[4mn[39m[4mo[24m[4mn[4mo[39m[4md[24m[24m[32mn[24m[32mo[24m[32md[32me[39m[39m [39m[4ms[24m[4ms[39m[4mc[24m[39m [39m [39m [39m [39m [90mripts/setupTypeScript.js[39m[24D[4mc[39m[4mr[24m[4mr[39m[4mi[24m[4mi[39m[4mp[24m[4mp[39m[4mt[24m[4mt[39m[4m/[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[4m/[4ms[24m[4ms[4me[24m[4me[4me[24m[34m[39m[10D[24ms[24mc[24mr[24mi[24mp[24mt[24m/[24ms[24me[24med.js[1m [0m[15D[4ms[4mc[4mr[4mi[4mp[4mt[4m/[4ms[4me[4me[4md[4m.[4mj[4ms[24m[0m [?2004l
+]0;svelte-book-kit-tutorial: node script/seed.jsfile:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/script/seed.js:5
+console.log(dotenv.config({ path: path.join(__dirname, "../.env") }));
+                                  ^
+
+ReferenceError: path is not defined
+    at [90mfile:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/[39mscript/seed.js:5:35
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+
+Node.js v18.14.1
+]0;~/projects/personal/svelte-book-kit-tutorial
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial[39m
+[31m❯[39m [K[?2004h[32mnode[39m [4mscript/seed.js[24m[?2004l
+]0;svelte-book-kit-tutorial: node script/seed.js[90mundefined[39m
+/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/node_modules/mongodb-connection-string-url/lib/index.js:9
+    return (connectionString.startsWith('mongodb://') ||
+                             ^
+
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at connectionStringHasValidScheme [90m(/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/[39mnode_modules/[4mmongodb-connection-string-url[24m/lib/index.js:9:30[90m)[39m
+    at new ConnectionString [90m(/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/[39mnode_modules/[4mmongodb-connection-string-url[24m/lib/index.js:85:34[90m)[39m
+    at parseOptions [90m(/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/[39mnode_modules/[4mmongodb[24m/lib/connection_string.js:191:17[90m)[39m
+    at new MongoClient [90m(/Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/[39mnode_modules/[4mmongodb[24m/lib/mongo_client.js:48:63[90m)[39m
+    at main [90m(file:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/[39mscript/seed.js:13:18[90m)[39m
+    at [90mfile:///Users/morishitanaoto/projects/personal/svelte-book-kit-tutorial/[39mscript/seed.js:38:1
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+
+Node.js v18.14.1
+]0;~/projects/personal/svelte-book-kit-tutorial
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial[39m
+[31m❯[39m [K[?2004h[32mnode[39m [4mscript/seed.js[24m[?2004l
+]0;svelte-book-kit-tutorial: node script/seed.jsmongodb+srv://svelte_ec:RFSzpJAjyDF51tEG@cluster0.c6aupmb.mongodb.net/?retryWrites=true&w=majority
+Seed products/react-book
+Seed products/vue-book
+Seed products/angular-book
+]0;~/projects/personal/svelte-book-kit-tutorial
+[0m[27m[24m[J[34m~/projects/personal/svelte-book-kit-tutorial[39m
+[35m❯[39m [K[?2004h[32mr[39m[32mr[39m[90mm di[39m[1m[31mr[1m[31me[0m[39m[39m [39m [39m [90mview[39m[1m[31mr[1m[31me[1m[31mp[0m[39m[39m [39m [39m [1m[31mp[1m[31mo[0m[39m [1m[31mp[0m[39m[0m[39m [1m[31mr[1m[31me[0m[39m[0m[39m [90mview[39m[0m[32mr[39m[0m[39m [39m [39m [39m [39m [32mr[39m[90mm di[39m[39m [39m [39m [39m [39m [1m[31mg[0m[39m[1m[31mg[0m[39m[90mit clone https://github.com/morimorig3/svelte-book-first-tutorial.git[39m[69D[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m[39m [39mr[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [65D[90meset --soft HEAD@{5}[39m[20D[39me[39mp[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18Do  [90mset --soft HEAD@{5}[39m[19D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [20D[90meset --soft HEAD@{5}[39m[20D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [21D[90mclone https://github.com/morimorig3/svelte-book-first-tutorial.git[39m[66D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [67D[90m clone https://github.com/morimorig3/svelte-book-first-tutorial.git[39m[67D[1m[31mg[1m[31mi[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [68D[90mt clone https://github.com/morimorig3/svelte-book-first-tutorial.git[39m[68D[1m[31mg[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [69D[1m[31mg[0m[39m[90mit clone https://github.com/morimorig3/svelte-book-first-tutorial.git[39m[69D[0m[32mg[32mh[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [68D[90m repo create[39m[12D[39m [39mr[39me[39mp[39mo[39m [39mc[39mr[39me[39ma[39mt[39me [7msvelte-book-kit-tutorial[27m[24D[27ms[27mv[27me[27ml[27mt[27me[27m-[27mb[27mo[27mo[27mk[27m-[27mk[27mi[27mt[27m-[27mt[27mu[27mt[27mo[27mr[27mi[27ma[27m                 [4ms[4mv[4me[4ml[4mt[4me[24m [4mt[24m[24m [4ml[24m[24m [4me[24m[24m [4mv[24m[24m [4ms[24m[24m [24m  [90me[39m [39m [90mte[39m [39m [39m [90mate[39m[34m[39m[11D[39mg[39mh[9C[34m[39m
+[J[1m[34m`file'[39m[0m[K[A[0m[27m[24m[39m[2Cgh repo cre[90mate[39m[K[39m[11D[32mg[32mh[39m[9C[39ma[39mt[39me[?2004l
+[J]0;svelte-book-kit-tutorial: gh repo create7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mWhat would you like to do?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;1;36m> Create a new repository on GitHub from scratch[0m
+[0;39m  Push an existing local repository to GitHub[0m
+7[1A[0G[1A[0G8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat would you like to do?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;39m  Create a new repository on GitHub from scratch[0m
+[0;1;36m> Push an existing local repository to GitHub[0m
+7[1A[0G8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat would you like to do?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;1;36m> Create a new repository on GitHub from scratch[0m
+[0;39m  Push an existing local repository to GitHub[0m
+7[1A[0G[1A[0G8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat would you like to do?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;39m  Create a new repository on GitHub from scratch[0m
+[0;1;36m> Push an existing local repository to GitHub[0m
+7[1A[0G8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat would you like to do?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;1;36m> Create a new repository on GitHub from scratch[0m
+[0;39m  Push an existing local repository to GitHub[0m
+7[1A[0G[1A[0G8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat would you like to do?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;39m  Create a new repository on GitHub from scratch[0m
+[0;1;36m> Push an existing local repository to GitHub[0m
+7[1A[0G8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat would you like to do?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;1;36m> Create a new repository on GitHub from scratch[0m
+[0;39m  Push an existing local repository to GitHub[0m
+7[1A[0G[1A[0G8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat would you like to do?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;39m  Create a new repository on GitHub from scratch[0m
+[0;1;36m> Push an existing local repository to GitHub[0m
+7[1A[0G8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat would you like to do?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;1;36m> Create a new repository on GitHub from scratch[0m
+[0;39m  Push an existing local repository to GitHub[0m
+7[1A[0G[1A[0G8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat would you like to do?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;39m  Create a new repository on GitHub from scratch[0m
+[0;1;36m> Push an existing local repository to GitHub[0m
+7[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat would you like to do?[0m[0;36m Push an existing local repository to GitHub[0m
+[0G[2K[0;1;92m? [0m[0;1;99mPath to local repository [0m[38;5;242m(.) [0m[?25l[?25l7[999;999f[6n8[?25h[6n
