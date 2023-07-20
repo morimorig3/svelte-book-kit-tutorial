@@ -19,5 +19,5 @@ export async function GET({ cookies, url }) {
   const sessionId = await createSession({ auth0Token, userId: sub, email });
   cookies.set("svelte_ec_session", sessionId, { path: "/" });
 
-  throw redirect(303, "/products/svelte-book");
+  throw redirect(303, "/products/react-book");
 }
