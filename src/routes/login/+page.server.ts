@@ -2,6 +2,7 @@ import { sendPasswordlessLink } from "$lib/server/auth0";
 import { fail } from "@sveltejs/kit";
 import type { Actions } from "./$types";
 import { FORM_ERRORS_LOGIN } from "./const";
+import { COOKIE_KEYS } from "../../const";
 
 export const actions: Actions = {
   default: async ({ cookies, request, url }) => {
@@ -20,7 +21,7 @@ export const actions: Actions = {
     const redirectUri = `${url.origin}/api/auth/callback`;
     await sendPasswordlessLink(email, state, redirectUri);
 
-    cookies.set("state", state, { path: "/" });
+    cookies.set(COOKIE_KEYS.STATE, state, { path: "/" });
     return { success: true };
   },
 };
