@@ -1,8 +1,7 @@
-import { readFile } from "fs/promises";
-import { database } from "./mongodb";
+import { database, type Product } from "./mongodb";
 
 export async function loadProducts() {
-  const products = await database.collection("products").find();
+  const products = await database.collection<Product>("products").find();
   return await products.toArray();
 }
 
