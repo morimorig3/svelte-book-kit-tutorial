@@ -30,7 +30,7 @@ async function main() {
       },
       {
         upsert: true,
-      }
+      },
     );
   }
 

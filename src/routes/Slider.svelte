@@ -1,29 +1,41 @@
 <script>
-    export let images;
+  export let images;
 
-    let centerIndex = 0;
-    $: leftIndex = (centerIndex - 1 + images.length) % images.length
-    $: rightIndex = (centerIndex + 1) % images.length
+  let centerIndex = 0;
+  $: leftIndex = (centerIndex - 1 + images.length) % images.length;
+  $: rightIndex = (centerIndex + 1) % images.length;
 
-  function moveLeft () {
+  function moveLeft() {
     centerIndex = (centerIndex - 1 + images.length) % images.length;
   }
 
-  function moveRight () {
+  function moveRight() {
     centerIndex = (centerIndex + 1) % images.length;
   }
 </script>
 
 <div class="slider">
-    <img src="{images[leftIndex]}" alt="スライダー画像（左）" class="slider-item left">
-    <img src="{images[centerIndex]}" alt="スライダー画像（中央）" class="slider-item center">
-    <img src="{images[rightIndex]}" alt="スライダー画像（右）" class="slider-item right">
-    <button class="slider-left-button" on:click={moveLeft}>←</button>
-    <button class="slider-right-button" on:click={moveRight}>→</button>
+  <img
+    src={images[leftIndex]}
+    alt="スライダー画像（左）"
+    class="slider-item left"
+  />
+  <img
+    src={images[centerIndex]}
+    alt="スライダー画像（中央）"
+    class="slider-item center"
+  />
+  <img
+    src={images[rightIndex]}
+    alt="スライダー画像（右）"
+    class="slider-item right"
+  />
+  <button class="slider-left-button" on:click={moveLeft}>←</button>
+  <button class="slider-right-button" on:click={moveRight}>→</button>
 </div>
 
 <style>
-      .slider {
+  .slider {
     position: relative;
     width: 80%;
     margin: 0 10%;
@@ -44,7 +56,7 @@
     top: 0;
     left: 100%;
   }
-  
+
   .slider-left-button {
     position: absolute;
     top: 50%;
