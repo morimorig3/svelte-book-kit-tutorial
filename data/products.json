@@ -3,30 +3,24 @@
     "id": "react-book",
     "name": "React Book",
     "price": 3500,
-    "images": [
-      "http://github.com/svelte-book/sample-app/raw/main/static/svelte-book-1.png",
-      "http://github.com/svelte-book/sample-app/raw/main/static/svelte-book-2.png",
-      "http://github.com/svelte-book/sample-app/raw/main/static/svelte-book-3.png"
-    ]
+    "images": ["/react-book-1.png", "/book-2.png", "/book-3.png"]
   },
   {
     "id": "vue-book",
     "name": "Vue Book",
     "price": 3500,
-    "images": [
-      "http://github.com/svelte-book/sample-app/raw/main/static/svelte-book-1.png",
-      "http://github.com/svelte-book/sample-app/raw/main/static/svelte-book-2.png",
-      "http://github.com/svelte-book/sample-app/raw/main/static/svelte-book-3.png"
-    ]
+    "images": ["/vue-book-1.png", "/book-2.png", "/book-3.png"]
   },
   {
     "id": "angular-book",
     "name": "Angular Book",
     "price": 3500,
-    "images": [
-      "http://github.com/svelte-book/sample-app/raw/main/static/svelte-book-1.png",
-      "http://github.com/svelte-book/sample-app/raw/main/static/svelte-book-2.png",
-      "http://github.com/svelte-book/sample-app/raw/main/static/svelte-book-3.png"
-    ]
+    "images": ["/angular-book-1.png", "/book-2.png", "/book-3.png"]
+  },
+  {
+    "id": "svelte-book",
+    "name": "Svelte Book",
+    "price": 3500,
+    "images": ["/svelte-book-1.png", "/book-2.png", "/book-3.png"]
   }
 ]
