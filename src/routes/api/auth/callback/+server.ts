@@ -1,8 +1,9 @@
 import { getProfile, getToken } from "$lib/server/auth0";
 import { createSession } from "$lib/server/session";
 import { error, redirect } from "@sveltejs/kit";
+import type { RequestHandler } from "./$types";
 
-export async function GET({ cookies, url }) {
+export const GET: RequestHandler = async function ({ cookies, url }) {
   const code = url.searchParams.get("code");
   const state = url.searchParams.get("state");
   const redirectUri = `${url.origin}/api/auth/callback`;
@@ -20,4 +21,4 @@ export async function GET({ cookies, url }) {
   cookies.set("svelte_ec_session", sessionId, { path: "/" });
 
   throw redirect(303, "/products/react-book");
-}
+};

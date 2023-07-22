@@ -1,13 +1,15 @@
 import { env } from "$env/dynamic/private";
 import { MongoClient, ObjectId } from "mongodb";
 
+export type MongoId = ObjectId | string;
+
 export type CartItem = {
-  _id?: ObjectId;
+  _id?: MongoId;
   productId: string;
 };
 
 export type Product = {
-  _id: string;
+  _id: MongoId;
   id: string;
   images: string[];
   name: string;
@@ -15,7 +17,7 @@ export type Product = {
 };
 
 export type Session = {
-  _id?: ObjectId;
+  _id?: MongoId;
   expiresAt: number;
   auth0Token: {
     access_token: string;
