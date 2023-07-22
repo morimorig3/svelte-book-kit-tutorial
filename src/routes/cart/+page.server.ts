@@ -1,7 +1,7 @@
 import type { WithId } from "mongodb";
-import type { PageServerLoad } from "./$types";
+import type { Actions, PageServerLoad } from "./$types";
 import type { Product } from "$lib/server/mongodb";
-import { loadCartItems } from "$lib/server/cart";
+import { deletFromCart, loadCartItems } from "$lib/server/cart";
 
 export const load: PageServerLoad = async function ({ locals }) {
   let cart: WithId<Product>[] = [];
@@ -10,4 +10,11 @@ export const load: PageServerLoad = async function ({ locals }) {
   }
 
   return { cart };
+};
+
+export const actions: Actions = {
+  default: async ({ locals, request }) => {
+    const data = await request.formData();
+    await deletFromCart(locals.currentUser.userId, data.get("productId"));
+  },
 };

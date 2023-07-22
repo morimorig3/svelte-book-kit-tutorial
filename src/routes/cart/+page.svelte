@@ -14,6 +14,9 @@
 
 {#await userRequest then user}
   <div class="cart-wrapper">
+    {#if cart.length === 0}
+      <p>カートに商品はありません</p>
+    {/if}
     <ul class="cart-list">
       {#each cart as { id, name, images, price } (id)}
         <li class="cart-item">
@@ -21,6 +24,10 @@
             <img src={images[0]} alt={name} />
             <p>{name}（{price}円）</p>
           </a>
+          <form method="POST">
+            <input type="hidden" value={id} name="productId" />
+            <button>削除</button>
+          </form>
         </li>
       {/each}
     </ul>
@@ -45,11 +52,19 @@
   }
   .cart-item a {
     display: flex;
+    flex-grow: 1;
     align-items: center;
     column-gap: 20px;
   }
   .cart-item img {
     width: 100px;
+    flex-shrink: 0;
+  }
+  .cart-item {
+    display: flex;
+    align-items: center;
+  }
+  .cart-item > form {
     flex-shrink: 0;
   }
 </style>
