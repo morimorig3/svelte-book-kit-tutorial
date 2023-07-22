@@ -5,7 +5,6 @@
 
   export let data;
   $: ({ product, relatedProducts, cart } = data);
-  $: cartLength = cart.length;
 
   let recommendRequest = new Promise<Product[]>(() => {});
   let userRequest = new Promise(() => {});
@@ -83,11 +82,8 @@
 
 <style>
   .product {
-    margin: 0 auto;
-    background-color: #fff;
     padding: 15px;
     width: 100%;
-    max-width: 800px;
   }
 
   .product-main {

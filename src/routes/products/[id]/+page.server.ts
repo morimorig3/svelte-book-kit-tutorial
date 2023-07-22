@@ -1,6 +1,6 @@
 import { addToCart, loadCartItems } from "$lib/server/cart";
 import { loadProducts } from "$lib/server/product";
-import type { Document, WithId } from "mongodb";
+import type { WithId } from "mongodb";
 import type { ProductID } from "../../../types";
 import type { Actions, PageServerLoad } from "./$types";
 import type { Product } from "$lib/server/mongodb";
