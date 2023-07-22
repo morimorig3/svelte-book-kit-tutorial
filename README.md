@@ -1,38 +1,28 @@
-# create-svelte
+# 実践Svelte入門で作ったECサイト
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+少しカスタマイズされた、[実践Svelte入門](https://gihyo.jp/book/2023/978-4-297-13495-2)のハンズオンです
 
-## Creating a project
+## カスタマイズしたこと
 
-If you're seeing this, you've probably already done this step. Congrats!
+- トップページを作成
+- カートページ作成
+- TypeScriptで記述
+- デザイン調整
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## デモ
 
 ```bash
 npm run dev
 
-# or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
 
-## Building
+## 本番環境
 
-To create a production version of your app:
+依存してるサービスは本文ママです
 
-```bash
-npm run build
-```
+- デプロイ先（Vercel）
+- パスワードレス認証（Auth0）
+- DB（mongoDB Atlas）
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+[https://svelte-book-kit-tutorial-beta.vercel.app/](https://svelte-book-kit-tutorial-beta.vercel.app/)
