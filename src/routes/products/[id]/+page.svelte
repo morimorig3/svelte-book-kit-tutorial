@@ -1,19 +1,22 @@
-<script>
+<script lang="ts">
   import { afterNavigate } from "$app/navigation";
+  import type { Product } from "$lib/server/mongodb";
     import Slider from "../../Slider.svelte";
   
     export let data;
     $:({product, relatedProducts, cart}= data)
-    let recommendRequest = new Promise(()=>{})
+    $: cartLength = cart.length
+
+    let recommendRequest = new Promise<Product[]>(()=>{})
     let userRequest = new Promise(()=>{})
   
     afterNavigate(()=>{
-      recommendRequest = fetch(`/api/recommend?id=${product.id}`).then(res=>res.json())
+      const productId = product?.id as string
+      recommendRequest = fetch(`/api/recommend?id=${productId}`).then(res=>res.json());
       userRequest = fetch(`/api/self`).then(res=>res.json())
     })
 
 
-    $: cartLength = cart.length
   </script>
   
   <header class="header">
@@ -38,6 +41,7 @@
   </header>
   
   <article class="product">
+    {#if product}
     <div class="product-main">
       <div class="image-container">
         <Slider images={product.images} />
@@ -50,7 +54,7 @@
           <dd>{product.price}円</dd>
         </dl>
         <div>
-          {#if !cart.find((item)=> item.id === product.id)}
+          {#if !cart.find((item)=> item.id === product?.id)}
           <form method="POST">
             <input type="hidden" value={product.id} name="productId">
             {#await userRequest}
@@ -68,6 +72,7 @@
         </div>
       </div>
     </div>
+    {/if}
   
     <footer>
       <h3>おすすめ商品</h3>
