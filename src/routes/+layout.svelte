@@ -50,7 +50,6 @@
     margin: 0;
     background-color: #f8fafc;
     padding: 0;
-    overflow: hidden;
   }
   .wrapper {
     display: flex;
