@@ -83,7 +83,6 @@
 <style>
   .product {
     padding: 15px;
-    width: 100%;
   }
 
   .product-main {

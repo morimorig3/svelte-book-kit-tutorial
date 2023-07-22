@@ -21,7 +21,7 @@
 <style>
   .casette-wrapper {
     max-width: 100%;
-    overflow: scroll;
+    overflow: hidden;
   }
   .casette-list {
     display: flex;
@@ -29,6 +29,7 @@
     column-gap: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: scroll;
   }
   .casette {
     width: 200px;
