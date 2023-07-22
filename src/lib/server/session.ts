@@ -1,4 +1,4 @@
-import { database } from "./mongodb";
+import { database, type MongoId, type Session } from "./mongodb";
 
 const expireIn = 30 * 60 * 1000; // 30 minutes
 
@@ -9,13 +9,13 @@ export async function createSession(data) {
     expiresAt: Date.now() + expireIn,
     ...data,
   };
-  await database.collection("sessions").insertOne(session);
+  await database.collection<Session>("sessions").insertOne(session);
   return sessionId;
 }
 
-export async function findSession(sessionId) {
+export async function findSession(sessionId?: MongoId) {
   const session = await database
-    .collection("sessions")
+    .collection<Session>("sessions")
     .findOne({ _id: sessionId });
   if (!session) {
     return null;
@@ -27,6 +27,6 @@ export async function findSession(sessionId) {
   return session;
 }
 
-export async function deleteSession(sessionId) {
-  await database.collection("sessions").deleteOne({ _id: sessionId });
+export async function deleteSession(sessionId: MongoId) {
+  await database.collection<Session>("sessions").deleteOne({ _id: sessionId });
 }

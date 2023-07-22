@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+  import { FORM_ERRORS_LOGIN } from './const.js';
+
     export let form;
 </script>
 
@@ -10,10 +12,10 @@
         <p>
             <label for="email">メールアドレス</label>
             <input type="text" name="email" id="email" value={form?.email ?? ""} />
-            {#if form?.error === "missing"}
+            {#if form?.error === FORM_ERRORS_LOGIN.MISSING}
                 <div style:color="red">メールアドレスを入力してください。</div>
             {/if}
-            {#if form?.error === "invalid_format"}
+            {#if form?.error === FORM_ERRORS_LOGIN.INVALID_FORMAT}
                 <div style:color="red">メールアドレスに@がありません。</div>
             {/if}
         </p>
