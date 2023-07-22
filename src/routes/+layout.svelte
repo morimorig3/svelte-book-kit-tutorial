@@ -19,12 +19,11 @@
       <nav>
         <ul class="header-links">
           <li>
-            ようこそ
             {#await userRequest then user}
               {#if user}
                 {user.email}さん <a href="/logout">ログアウト</a>
               {:else}
-                ゲストさん <a href="/login">ログイン</a>
+                <a href="/login">ゲストさん</a>
               {/if}
             {/await}
           </li>
@@ -71,6 +70,8 @@
   .inner {
     max-width: 1024px;
     margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .header-inner {
@@ -79,12 +80,14 @@
     align-items: center;
     margin: 0 auto;
     padding: 0 15px;
-    width: 100%;
     height: 50px;
   }
 
   .header-title {
+    color: #1e293b;
     font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
   }
 
   .header-links {
@@ -93,5 +96,17 @@
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+  @media screen and (max-width: 767px) {
+    .header-title {
+      font-size: 20px;
+    }
+    .header-inner {
+      flex-direction: column;
+      height: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      row-gap: 10px;
+    }
   }
 </style>
