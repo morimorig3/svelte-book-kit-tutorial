@@ -24,7 +24,7 @@
             <img src={images[0]} alt={name} />
             <p>{name}（{price}円）</p>
           </a>
-          <form method="POST">
+          <form method="POST" action="?/remove">
             <input type="hidden" value={id} name="productId" />
             <button>削除</button>
           </form>

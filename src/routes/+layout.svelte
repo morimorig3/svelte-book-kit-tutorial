@@ -5,10 +5,17 @@
   export let data;
   $: ({ cart } = data);
   $: cartLength = cart.length;
+  let cartOpen = false;
 
   let userRequest = new Promise(() => {});
+
+  function toggleCart() {
+    cartOpen = !cartOpen;
+  }
+
   afterNavigate(() => {
     userRequest = fetch(`/api/self`).then((res) => res.json());
+    cartOpen = false;
   });
 </script>
 
@@ -27,8 +34,28 @@
               {/if}
             {/await}
           </li>
-          <li>
-            <a href="/cart">カート（{cartLength}）</a>
+          <li class="cart">
+            <a href="/cart" on:click|preventDefault={toggleCart}
+              >カート（{cartLength}）</a
+            >
+            {#if cartOpen}
+              <div class="cart-detail">
+                {#if cart.length > 0}
+                  <ul class="cart-list">
+                    {#each cart as item}
+                      <li>
+                        <a href="/products/{item.id}"
+                          >{item.name} - {item.price}円</a
+                        >
+                      </li>
+                    {/each}
+                  </ul>
+                {:else}
+                  <p>カートは空です</p>
+                {/if}
+                <a class="cart-page-link" href="/cart">カートを見る</a>
+              </div>
+            {/if}
           </li>
         </ul>
       </nav>
@@ -110,5 +137,37 @@
       padding-bottom: 10px;
       row-gap: 10px;
     }
+  }
+
+  .cart {
+    position: relative;
+  }
+
+  .cart-detail {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 250px;
+    padding-left: 0;
+    padding: 20px;
+    background-color: #f8fafc;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+  .cart-list {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .cart-list > * + * {
+    margin-top: 20px;
+  }
+
+  .cart-page-link {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
   }
 </style>

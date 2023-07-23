@@ -1,9 +1,11 @@
-import { addToCart, loadCartItems } from "$lib/server/cart";
+import { loadCartItems } from "$lib/server/cart";
 import { loadProducts } from "$lib/server/product";
 import type { WithId } from "mongodb";
 import type { ProductID } from "../../../types";
-import type { Actions, PageServerLoad } from "./$types";
+import type { PageServerLoad } from "./$types";
 import type { Product } from "$lib/server/mongodb";
+
+export const prerender = true;
 
 async function getProductFromDataBase(productID: ProductID) {
   const products = await loadProducts();
@@ -27,11 +29,4 @@ export const load: PageServerLoad = async function ({ locals, params }) {
   }
 
   return { product, relatedProducts, cart };
-};
-
-export const actions: Actions = {
-  default: async ({ locals, request }) => {
-    const data = await request.formData();
-    await addToCart(locals.currentUser.userId, data.get("productId"));
-  },
 };
