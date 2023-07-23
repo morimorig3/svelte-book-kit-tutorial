@@ -53,10 +53,11 @@
   .wrapper {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     min-height: 100dvh;
   }
   main {
-    flex: 1;
+    flex: 1 1 0%;
   }
   header {
     border-bottom: 1px solid #e2e8f0;
@@ -65,29 +66,30 @@
     background-color: #1e293b;
     color: #f8fafc;
     text-align: center;
+    line-height: 1.6;
   }
 
   .inner {
-    max-width: 1024px;
+    max-width: 1072px;
     margin: 0 auto;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   .header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding: 0 15px;
     height: 50px;
   }
 
   .header-title {
+    font-family: "Roboto", sans-serif;
     color: #1e293b;
     font-weight: bold;
     text-decoration: none;
     white-space: nowrap;
+    font-size: 24px;
   }
 
   .header-links {
