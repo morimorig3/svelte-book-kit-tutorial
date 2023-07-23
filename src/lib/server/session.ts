@@ -2,7 +2,7 @@ import { database, type MongoId, type Session } from "./mongodb";
 
 const expireIn = 30 * 60 * 1000; // 30 minutes
 
-export async function createSession(data) {
+export async function createSession(data: any) {
   const sessionId = crypto.randomUUID();
   const session = {
     _id: sessionId,

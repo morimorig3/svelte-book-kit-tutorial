@@ -1,6 +1,10 @@
 import { env } from "$env/dynamic/private";
 
-export async function sendPasswordlessLink(email, state, redirectUri) {
+export async function sendPasswordlessLink(
+  email: string,
+  state: any, // TODO: auth0のstate型付け
+  redirectUri: string,
+) {
   const res = await fetch(`https://${env.AUTH0_DOMAIN}/passwordless/start`, {
     method: "POST",
     headers: {
@@ -28,7 +32,8 @@ export async function sendPasswordlessLink(email, state, redirectUri) {
   }
 }
 
-export async function getToken(code, redirectUri) {
+export async function getToken(code: any, redirectUri: string) {
+  // TODO: auth0のstate型付け
   const params = new URLSearchParams();
   params.set("grant_type", "authorization_code");
   params.set("client_id", env.AUTH0_CLIENT_ID);
@@ -50,7 +55,7 @@ export async function getToken(code, redirectUri) {
   }
 }
 
-export async function getProfile(token) {
+export async function getProfile(token: any) {
   const res = await fetch(`https://${env.AUTH0_DOMAIN}/userinfo`, {
     headers: {
       authorization: `Bearer ${token.access_token}`,

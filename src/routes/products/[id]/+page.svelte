@@ -5,11 +5,12 @@
   import Slider from "../../Slider.svelte";
   import { onMount } from "svelte";
   import { enhance } from "$app/forms";
+  import type { WithId } from "mongodb";
 
   export let data;
   $: ({ product, relatedProducts } = data);
 
-  let cart = [];
+  let cart: WithId<Product>[] = [];
 
   let recommendRequest = new Promise<Product[]>(() => {});
   let userRequest = new Promise(() => {});
@@ -29,12 +30,13 @@
     );
     userRequest = fetch(`/api/self`).then((res) => res.json());
   });
+  console.log($page);
 </script>
 
 <svelte:head>
   <meta name="twitter:card" content="summary" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content={$page.url} />
+  <meta property="og:url" content={$page.url.href} />
   <meta property="og:title" content={product?.name} />
   <meta
     property="og:image"
@@ -132,9 +134,5 @@
     width: 100%;
     max-width: 400px;
     overflow: hidden;
-  }
-
-  .image-container img {
-    width: 100%;
   }
 </style>

@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
   import { afterNavigate } from "$app/navigation";
 
-  export let images;
+  export let images: string[];
 
   let centerIndex = 0;
   $: leftIndex = (centerIndex - 1 + images.length) % images.length;
