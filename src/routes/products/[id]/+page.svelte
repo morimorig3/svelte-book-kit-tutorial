@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from "$app/stores";
   import { afterNavigate } from "$app/navigation";
   import type { Product } from "$lib/server/mongodb";
   import Slider from "../../Slider.svelte";
@@ -16,7 +17,24 @@
     );
     userRequest = fetch(`/api/self`).then((res) => res.json());
   });
+
+  console.log($page);
 </script>
+
+<svelte:head>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={$page.url} />
+  <meta property="og:title" content={product?.name} />
+  <meta
+    property="og:image"
+    content={`${$page.url.origin}${product?.images[0]}`}
+  />
+  <meta
+    property="og:description"
+    content={`${product?.name} - ${product?.price}円`}
+  />
+</svelte:head>
 
 <article class="product">
   {#if product}
