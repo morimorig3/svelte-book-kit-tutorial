@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { page, updated } from "$app/stores";
+  import { page } from "$app/stores";
   import { afterNavigate } from "$app/navigation";
   import type { Product } from "$lib/server/mongodb";
   import Slider from "../../Slider.svelte";
@@ -30,7 +30,6 @@
     );
     userRequest = fetch(`/api/self`).then((res) => res.json());
   });
-  console.log($page);
 </script>
 
 <svelte:head>
