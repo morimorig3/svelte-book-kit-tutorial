@@ -1,4 +1,6 @@
 <script>
+  import { afterNavigate } from "$app/navigation";
+
   export let images;
 
   let centerIndex = 0;
@@ -12,6 +14,10 @@
   function moveRight() {
     centerIndex = (centerIndex + 1) % images.length;
   }
+
+  afterNavigate(() => {
+    centerIndex = 0;
+  });
 </script>
 
 <div class="slider">

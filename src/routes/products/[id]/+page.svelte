@@ -1,14 +1,26 @@
 <script lang="ts">
-  import { page } from "$app/stores";
+  import { page, updated } from "$app/stores";
   import { afterNavigate } from "$app/navigation";
   import type { Product } from "$lib/server/mongodb";
   import Slider from "../../Slider.svelte";
+  import { onMount } from "svelte";
+  import { enhance } from "$app/forms";
 
   export let data;
-  $: ({ product, relatedProducts, cart } = data);
+  $: ({ product, relatedProducts } = data);
+
+  let cart = [];
 
   let recommendRequest = new Promise<Product[]>(() => {});
   let userRequest = new Promise(() => {});
+
+  async function loadCart() {
+    cart = await fetch(`/api/cart`).then((res) => res.json());
+  }
+
+  onMount(() => {
+    loadCart();
+  });
 
   afterNavigate(() => {
     const productId = product?.id as string;
@@ -17,8 +29,6 @@
     );
     userRequest = fetch(`/api/self`).then((res) => res.json());
   });
-
-  console.log($page);
 </script>
 
 <svelte:head>
@@ -51,7 +61,16 @@
         </dl>
         <div>
           {#if !cart.find((item) => item.id === product?.id)}
-            <form method="POST">
+            <form
+              method="POST"
+              action="/cart?/add"
+              use:enhance={() => {
+                return async ({ update }) => {
+                  await update();
+                  await loadCart();
+                };
+              }}
+            >
               <input type="hidden" value={product.id} name="productId" />
               {#await userRequest}
                 <button>カートに入れる</button>
